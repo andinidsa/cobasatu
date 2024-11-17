@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Desa</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 500px;
+    }
+    footer {
+      background-color: #007bff;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Desa Satu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#dashboard">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#map">Peta Desa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#visi-misi">Visi & Misi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="mb-5">
+      <div class="text-center">
+        <h1 class="mb-4">Selamat Datang di Dashboard Desa</h1>
+        <p class="lead">Dashboard ini menyediakan informasi mengenai peta, visi misi, dan detail lainnya.</p>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="mb-5">
+      <h2 class="text-primary">Peta Desa</h2>
+      <iframe src="https://desasatu.netlify.app/" title="Peta Desa"></iframe>
+    </section>
+
+    <!-- Visi & Misi Section -->
+    <section id="visi-misi" class="mb-5">
+      <h2 class="text-primary">Visi & Misi</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Visi:</h3>
+          <p>Menjadi desa mandiri, sejahtera, dan berdaya saing berbasis potensi lokal.</p>
+        </div>
+        <div class="col-md-6">
+          <h3>Misi:</h3>
+          <ul>
+            <li>Meningkatkan kualitas sumber daya manusia melalui pendidikan dan pelatihan.</li>
+            <li>Meningkatkan infrastruktur desa untuk mendukung kesejahteraan masyarakat.</li>
+            <li>Mengembangkan potensi ekonomi desa berbasis sumber daya lokal.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="mb-5">
+      <h2 class="text-primary">Kontak</h2>
+      <p>Untuk informasi lebih lanjut, silakan hubungi:</p>
+      <p><strong>Email:</strong> desa@example.com <br><strong>Telepon:</strong> +62 812 3456 7890</p>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2024 Desa Satu. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
